@@ -1,0 +1,212 @@
+@Import Url("Https://Fonts.Googleapis.Com/Css2?Family=Poppins:ital,Wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&Display=Swap");
+
+*,
+*::After,
+*::Before {
+  Box-Sizing: Border-Box;
+  Padding: 0;
+  Margin: 0;
+}
+
+.Html {
+  Font-Size: 62.5%;
+}
+
+Body {
+  Font-Family: "Poppins", Sans-Serif;
+}
+
+
+
+.Container {
+  Max-Width: 1200px;
+  Width: 90%;
+  Margin: Auto;
+}
+
+.Btn {
+  Display: Inline-Block;
+  Padding: 0.5em 1.5em;
+  Text-Decoration: None;
+  Border-Radius: 50px;
+  Cursor: Pointer;
+  Outline: None;
+  Margin-Top: 1em;
+  Text-Transform: Uppercase;
+  Font-Weight: Small;
+}
+
+.Btn-Primary {
+  Color: #Fff;
+  Background: #16a083;
+}
+
+.Btn-Primary:hover {
+  Background: #117964;
+ 
+}
+
+
+
+.Navbar Input[Type="Checkbox"],
+.Navbar .Hamburger-Lines {
+  Display: None;
+}
+
+.Navbar {
+  Box-Shadow: 0px 5px 10px 0px #Aaa;
+  Position: Fixed;
+  Width: 100%;
+  Background: #Fff;
+  Color: #000;
+  Opacity: 0.85;
+  Height: 50px;
+  Z-Index: 12;
+}
+
+.Navbar-Container {
+  Display: Flex;
+  Justify-Content: Space-Between;
+  Height: 64px;
+  Align-Items: Center;
+}
+
+.Menu-Items {
+  Order: 2;
+  Display: Flex;
+}
+
+.Menu-Items Li {
+  List-Style: None;
+  Margin-Left: 1.5rem;
+  Margin-Bottom: 0.5rem;
+  Font-Size: 1.2rem;
+}
+
+.Menu-Items A {
+  Text-Decoration: None;
+  Color: #444;
+  Font-Weight: 500;
+  Transition: Color 0.3s Ease-In-Out;
+}
+
+.Menu-Items A:hover {
+  Color: #117964;
+  Transition: Color 0.3s Ease-In-Out;
+}
+
+.Logo {
+  Order: 1;
+  Font-Size: 2.3rem;
+  Margin-Bottom: 3px;
+  height: 50px;
+}
+
+
+
+.Showcase-Area {
+  Height: 50vh;
+  Background: Linear-Gradient(
+      Rgba(240, 240, 240, 0.144),
+      Rgba(255, 255, 255, 0.336)
+    ),
+    Url("./images/sam.webp");
+  Background-Size: Cover;
+  Background-Position: Center;
+  Background-Repeat: No-Repeat;
+}
+
+.Showcase-Container {
+  Display: Flex;
+  Flex-Direction: Column;
+  Align-Items: Center;
+  Justify-Content: Center;
+  Height: 100%;
+  Font-Size: 1.6rem;
+}
+
+.Main-Title {
+  Text-Transform: Uppercase;
+  Margin-Top: 1.5em;
+}
+
+
+
+
+@Media (Max-Width: 768px) {
+  .Navbar {
+    Opacity: 0.95;
+  }
+
+  
+
+  .Navbar  Li {
+    Margin-Bottom: 1.5rem;
+    Font-Size: 1.3rem;
+    Font-Weight: 500;
+  }
+
+  .Logo {
+    Position: Absolute;
+    Top: 5px;
+    Right: 15px;
+    Font-Size: 2rem;
+  }
+
+  .Img-Container {
+    Margin: 0;
+  }
+}
+
+@Media (Max-Width: 500px) {
+  Html {
+    Font-Size: 65%;
+  }
+
+  .Navbar .Menu-Items Li {
+    Font-Size: 1.6rem;
+  }
+
+
+
+
+  .Logo {
+    Position: Absolute;
+    Top: 06px;
+    Right: 15px;
+    Font-Size: 3rem;
+  }
+
+  .Navbar  Li {
+    Margin-Bottom: 2.5rem;
+    Font-Size: 1.8rem;
+    Font-Weight: 500;
+  }
+}
+
+section{
+    display:flex;
+}
+article{
+    flex: 1;
+    margin: 2%;
+
+}
+
+
+
+footer{
+    display: flex;
+    padding-top: 2%;
+    background-color: #Fff;
+    padding-bottom: 2%;
+    margin-bottom: 0px;
+    background-color: #aaa;
+   
+}
+footer div{
+    flex: 1;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
